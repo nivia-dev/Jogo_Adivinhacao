@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Jogo de Adivinhar</title>
+</head>
+<body>
+		
+    <main>
+        <h1>Adivinhe o número!</h1>
+        <p>Estou pensando em um número de 1 a 100.</p>
+        <p>Tente acertar. Você tem 10 chances.</p>
+
+        <div class='blocos'>
+            
+        
+                <input type="number" id="chute" min="1" max="100">
+                <button onclick="adivinhar()">Adivinhar</button>
+            <div id='frases'>
+                <span class="result"></span>
+                <p id='resposta'></p>
+                
+                <p id='nDigitado'></p>
+                <p id='tentativa'></p>
+            </div>
+            <button onclick="reiniciar()">Reiniciar</button>
+        </div>
+    </main>
+
+	
+
+</body>
+<script src="script.js"></script>
+</html>
